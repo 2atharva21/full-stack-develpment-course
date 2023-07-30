@@ -1,0 +1,61 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+.nav{
+    display: flex;
+    background-color: brown;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 56px;
+margin: 22px 34px;
+}
+.menu-btn i{
+color: rgb(255, 255, 255);
+font-size: 20px;
+cursor: pointer;
+display: none;
+margin: 25px;
+}
+
+         
+.nav ul{
+    display: flex;
+    color: antiquewhite;
+
+}
+#click{
+    display: none;
+}
+.nav ul li a{
+    margin: 0 30px;
+    font-size: 40px;
+    display: block;
+}
+ @media(max-width:940px){
+    .nav ul{
+        position: fixed;
+        top: 80px;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        right: -109%;
+        transition: all 0.3 ease ;
+    }
+    .nav ul li{
+        margin: 40px 0;
+        }
+        .menu-btn i{
+            display: block;
+        }
+        #click:checked ~ ul{
+            right: 0%;
+        }
+        #click:checked ~ .menu-btn i:before{
+            content: "\f00d";
+        }
+ }

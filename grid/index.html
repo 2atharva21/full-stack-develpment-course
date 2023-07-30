@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-areas: "header header header"
+        "sidebar footer footer"
+        "main main main";
+        grid-row-gap: 12px;
+        height: 100vh;
+        border: 1px solid transparent;
+        border-radius: 12px;
+         
+    }
+    .header{
+        grid-area: header;
+        
+background-color: red;
+display: grid;
+grid-template-rows: 10px;
+
+    }
+    .footer{
+        grid-area: footer;
+background-color: aquamarine;
+display: grid;
+grid-template-rows: 30px;
+    }
+    .sidebar{
+        grid-area: sidebar;
+background-color: brown;
+display: grid;
+grid-template-rows: 50pxpx;
+    }
+    .main{
+        grid-area: main;
+background-color: chartreuse;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="footer"></div>
+        <div class="sidebar"></div>
+        <div class="main"></div>
+    </div>
+    
+</body>
+</html>
